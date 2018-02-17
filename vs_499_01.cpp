@@ -9,18 +9,24 @@ using std::string;
 class vs_499_01
 {
   public:
+    vs_499_01(string start)
+    {
+      startPrime = start;
+    }
   	void introMessage()
     {
       cout << "\n===========YTZ 3===========\n"
         	<< "==========================="<<endl;
     }
+  private:
+    string start;
 };
 
 int main()
 {
   char ending;
   
-  vs_499_01 program();
+  vs_499_01 program("");
   
   program.introMessage();
   
